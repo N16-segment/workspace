@@ -1,0 +1,58 @@
+.container{
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+table{
+  border: 1px solid black;
+  margin: 20px 0px;
+}
+table td:first-child{
+  border: 1px solid black;
+  /* width: 160px; */
+  padding: 10px 20px;
+}
+table td:last-child{
+  border: 1px solid black;
+  width: 1200px;
+  padding: 10px 20px;
+}
+h3, h5{
+  display: inline;
+}
+.must-check{
+  position: relative;
+}
+h5{
+  position: absolute;
+  top: 6px;
+  right: 0px;
+  /* float: right; */
+}
+b{
+  color: red;
+}
+tr > td:first-child{
+  background-color: #f7f7f7;
+}
+.input-box{
+  width: 250px;
+  margin-right: 5px;
+}
+.input-addr{
+  margin-bottom: 5px;
+  width: 80px;
+}
+.input-addr2{
+  margin-bottom: 5px;
+  margin-right: 5px;
+  width: 350px;
+}
+.phone{
+  margin-right: 5px;
+  width: 80px;
+}
+.input-birth{
+  width: 80px;
+  margin-right: 5px;
+}

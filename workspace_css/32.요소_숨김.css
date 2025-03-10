@@ -1,0 +1,26 @@
+div{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  border: 1px solid black;
+  text-align: center;
+  line-height: 200px;
+}
+
+.d1{
+  background-color: rgb(255, 0, 149);
+}
+.d2{
+  background-color: rgb(15, 180, 67);
+  /* 요소는 숨기지만 공간영역은 살아있음 보이지만 않을 뿐! */
+  /* visibility: hidden; */
+  /* 요소와 요소의 공간 모두 사라짐 */
+  /* display: none; */
+  /* 불투명도 0~1로 나타내고 0에서부터 투명하고 1은 불투명해짐 */
+  opacity: 0.4;
+
+}
+.d3{
+  background-color: rgb(12, 192, 212);
+}
+

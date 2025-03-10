@@ -1,0 +1,94 @@
+body{
+  background-color: rgb(127, 200, 200);
+}
+
+.container{
+  background-color: white;
+  width: 500px;
+  margin: 30px auto;
+  border-radius:8px;
+  padding: 50px;
+  /* 그림자 */
+  box-shadow: 3px 3px 6px grey;
+}
+
+.title_p{
+  margin-bottom: 20px;
+}
+
+.infor-div > div{
+  /* border: 1px solid black; */
+  margin-bottom: 10px;
+}
+
+.infor-div > div:first-child > input{
+  width: 70%;
+}
+
+.infor-div p{
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.red{
+  color: red;
+}
+
+input{
+  padding: 6px;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  font-size: 0.7rem;
+  /* 크기는 부모기준 */
+  width: 100%;
+}
+
+.btn{
+  padding: 7px 10px;
+  font-size: 0.8rem;
+  width: 28.5%;
+  background-color: skyblue;
+  color: white;
+  /* border: 1px solid skyblue; */
+  border: none;
+  border-radius: 3px;
+}
+
+.small{
+  padding: 5px 12px;
+  box-shadow: 1px 1px 3px gray;
+  width: 20%;
+}
+
+.yellow{
+  background-color: rgb(220, 197, 20);
+}
+
+.first-adrs{
+  margin: 4px;
+}
+
+.email-div input, .email-div select{
+  width: 31.5%;
+}
+
+select{
+  padding: 5px 10px;
+  font-size: 0.7rem;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+}
+
+.birth-div select{
+  width: 32.4%;
+}
+
+/* 인라인블록 중앙정렬은 부모태그로 변경  */
+.btn-center{
+  text-align: center;
+  margin-top: 45px;
+}
+
+.btn-center button{
+  margin: 0px 6px;
+}

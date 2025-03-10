@@ -1,0 +1,51 @@
+table{
+  width: 500px;
+  margin: auto;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+/* 제목행에는 위, 아래 테두리만 */
+thead > tr{
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  background-color: rgb(141, 97, 183,0.6);
+  color: hsl(208, 100%, 97%);
+}
+
+/* 내용에는 아래 테두리만! */
+tbody > tr{
+  border-bottom: 1px solid black;
+}
+
+td{
+  padding: 5px;
+}
+
+/* 내용 행에서 제목 열만 정력 변경 */
+tbody td:nth-child(2){
+  text-align: left;
+}
+
+/* 내용 행에서 짝수번째 행만 배경색 */
+tbody > tr:nth-child(even){
+  background-color: hsl(192, 40%, 82%);
+}
+
+/*
+ 색상 변경 방법
+ 1. 정해진 키워드 사용(red, blue...)
+ 2. RGB 문법 사용(0~f) 
+    00 00 00 -> 각 농도 
+    (0~9 a b c d e f)
+    #000000 ->검정색
+    #ffffff -> 흰색 
+    #00ff00 -> 초록색
+    rgb(0,0,255)->파란색 범위 (0~255)
+    참고 사이트 color hunt에서 검색
+    번호 클릭해서 자동복사 
+
+ 3. RGBA 문법 사용
+ rgba(0,0,255,0~1)
+ 마지막 값이 0이면 투명, 1이면 불투명
+ */

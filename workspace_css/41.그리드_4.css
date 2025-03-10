@@ -1,0 +1,26 @@
+.container{
+  width: 600px;
+  height: 400px;
+  margin: 20px auto;
+  border: 2px solid black;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
+  align-items: center;
+  justify-items: center;
+
+}
+
+.container > div{
+  border: 1px solid red;
+}
+
+.container > div:first-child{
+  align-self: self-start;
+  justify-self: start;
+}
+
+.container > div:nth-child(2){
+  align-self: self-end;
+}
+

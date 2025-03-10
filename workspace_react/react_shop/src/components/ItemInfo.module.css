@@ -1,0 +1,34 @@
+.item_info_container{
+  border: 1px solid black;
+  display: flex;
+  gap: 2rem;
+}
+.list_div{
+  border: 1px solid red;
+  width: 50%;
+}
+
+.list_table{
+  width: 100%;
+  text-align: center;
+}
+.list_table thead tr{
+  border-top: 1px solid rgb(57, 78, 97);
+  border-bottom: 1px solid rgb(57, 78, 97);
+  background-color: aliceblue;
+  color: rgb(57, 78, 97);
+}
+.list_table tbody tr{
+  border-bottom: 1px solid lightgray;
+}
+.list_table td{
+  padding: 6px;
+}
+.list_table tbody tr:nth-child(even){
+  background-color: aliceblue;
+}
+/* 내용줄에 행에 마우스 올리면 */
+.list_table tbody tr:hover{
+  background-color: #eeeeee;
+}
+

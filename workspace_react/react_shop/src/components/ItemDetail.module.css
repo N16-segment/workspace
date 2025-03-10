@@ -1,0 +1,14 @@
+.detail_div{
+  border: 1px solid red;
+  width: 50%;
+}
+.item_detail_table{
+  width: 100%;
+  border: 1px solid #cccccc;
+}
+.item_detail_table tr, .item_detail_table td{
+  border: 1px solid #cccccc;
+}
+.item_detail_table td{
+  padding: 4px;
+}

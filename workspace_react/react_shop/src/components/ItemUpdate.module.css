@@ -1,0 +1,15 @@
+.item_update_container{
+  width: 60%;
+  margin: 0 auto;
+}
+.item_update_table{
+  width: 100%;
+  border: 1px solid black;
+}
+.item_update_table td{
+  padding: 6px;
+}
+.btn_div{
+  text-align: right;
+  margin-top: 10px;
+}

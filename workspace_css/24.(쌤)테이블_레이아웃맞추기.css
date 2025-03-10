@@ -1,0 +1,54 @@
+.container{
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 60%;
+}
+
+h2{
+  text-align: center;
+  margin: 20px 0px;
+}
+
+table, tr,td{
+  border: 1px solid white;
+}
+
+table{
+  width: 100%;
+  text-align: center;
+}
+
+td{
+  padding: 4px;
+}
+
+.right-div{
+  text-align: right;
+  font-size: 0.8rem;
+}
+
+.red-span{
+  font-size: 0.7rem;
+  color: red;
+  vertical-align: top;
+}
+div{
+  text-align: right;
+  margin-top: 10px;
+}
+
+thead > tr{
+  background-color: rgb(18, 18, 66);
+  color: aliceblue;
+}
+
+tbody > tr{
+  background-color: rgb(228, 238, 190);
+}
+
+button{
+  border-radius: 6px;
+  width: 85px;
+  background-color: rgb(18, 18, 66);
+  color: aliceblue;
+}

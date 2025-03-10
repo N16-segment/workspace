@@ -1,0 +1,82 @@
+/* 선택자
+선택자 : 태그선택자, id선택자, class 선택자, 자식선택자, 자손선택자, 속성선택자
+*/
+/* 태그 선택자 */
+/* h3 태그 모두를 선택하겠다 */
+/* 예시
+<h3>선택자</h3> */
+h3{
+  color: red;
+  }
+
+/* id 선택자 -> 고유한 데이타를 의미
+동일한 태그라도 하나만 선택할 수 있다.
+디자인할때는 잘 사용하지 않는다. */
+/* 예시
+<h4 id="aaa">선택자</h4>
+<h4>선택자</h4>
+ */
+#aaa{
+  color: black;
+}
+
+/* 클래스 선택자 
+-> 여러가지 태그에 중복설정 가능 */
+/* 예시
+<h4 class="bbb">선택자</h4> */
+.bbb{
+  color: blue;
+}
+
+/* 자식 선택자
+/* 예시
+-> ul태그의 자식 li태그를 선택 
+<ul>
+<li>메뉴1</li>
+<li>메뉴2</li>
+<li>메뉴3</li>
+</ul>
+
+<li>메뉴4</li> -> ul 태그 밖에 있는 태그는 선택이 안된다.
+*/
+ul > li{
+  background-color: red;
+} 
+
+/* 자손 선택자
+위에 있는 예시에서 li태그는
+안에 있든 ul 밖에 있든 모두 자손으로 본다. 
+body 태그의 자식이자 자손 모두 자손으로 본다. 
+모든 태그에서 자식도 자손도 자손에 속한다.*/
+body li{
+  color: brown;
+}
+
+/* 속성 선택자
+모든 태그에 적용된다. */
+/* 아래 예시로 적용, 
+속성으로 []를 사용해서 선택한다.
+타입이 텍스트인 것만 선택 */
+input[type="text"]{
+  width: 500px;
+}
+/* 예시
+<input type="text" name="a1"> <br>
+<input type="password" name="a2"> <br>
+<input type="text" name="a3"> <br>
+ */
+ /* 속성중 네임이 a1인 태그만 선택 */
+input[name="a1"]{
+  width: 500px;
+}
+/* 예시
+<input type="text" class="my-input"> <br>
+<input type="password"> <br>
+<input type="text" class="my-input"> <br>
+ */
+/* 클래스만 너비를 준다. */
+ .my-input{
+  width: 500px;
+ }
+
+

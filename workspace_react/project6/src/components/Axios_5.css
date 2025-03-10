@@ -1,0 +1,17 @@
+.t1{
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 800px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.t1 tr, .t1 td{
+  border: 1px solid black;
+}
+/* 버튼은 인라인블럭이므로 부모태그에 정렬을 주어야 가운데로 옮겨진다. */
+.t1-tr > td{
+  text-align: center;
+  vertical-align: top;
+  padding: 16px;
+}

@@ -1,0 +1,30 @@
+/* 클래스 중복의 순서와는 상관없고 css에서 놓인 순서대로 적용된다. */
+.d1{
+  border: 2px solid red;
+  background-color: rgb(190, 240, 241);
+}
+
+.d2{
+  color: blueviolet;
+  background-color:yellow;
+}
+
+/* 중복되는 부분은 별도의 클래스명을 만들어서 넣어주고 */
+.dd{
+  border: 1px solid green;
+  background-color: beige;
+}
+/* 다른부분만 별도의 클래스명을 주어서 띄어쓰고 넣어준다. */
+.d3{
+  color: blue;
+}
+.d4{
+  color: red;
+}
+
+/* 똑같은 부분은 놔두고 다른부분만 추가로 넣어주면 수정이 필요할 경우 번거로워지므로 위의 예시처럼 클래스를 잘게 잘라서 여러개의 클래스를 넣어서 적용시킨다. */
+/* .d4{
+  border: 1px solid green;
+  background-color: beige;
+  color: gray;
+} */

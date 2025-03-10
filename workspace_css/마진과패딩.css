@@ -1,0 +1,32 @@
+.d1{
+  border: 1px solid black;
+  /* 안쪽여백 */
+  /* padding: 30px; */
+
+  /* 상하, 좌우 */
+  /* padding: 10px 50px; */
+
+  /* 12시 방향부터 시계방향 -> 상, 우, 하, 좌 */
+  padding: 10px 20px 30px 50px;
+  /*테두리를 기준으로 바깥여백 */
+  margin: 0px 0px 30px 20px;
+
+}
+
+/* 사각박스의 전체 크기는 326이 된다. */
+.d2{
+  border: 3px dotted black;
+  width: 300px;
+  padding: 0px 10px;
+
+  /* content박스(눈에 안보이는 영역)의 크기 기준을 내용박스로 기준! */
+  /* border-box로 하지 않으면 content-box로 되어있어서 실제 사이즈를 기준으로 만드려면 border-box로 사이징해줘야한다. */
+  box-sizing: border-box;
+
+}
+
+.d3{
+  border: 3px solid red;
+  height: 80px;
+  width: 300px;
+}

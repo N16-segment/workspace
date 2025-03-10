@@ -1,0 +1,49 @@
+.container{
+  border: 1px solid black;
+  background-color: cadetblue;
+  color: white;
+  margin: 30px auto;
+  width: 600px;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+}
+
+.container > div{
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  align-self: center;
+  width: 60%;
+  height: 15%;
+  display: flex;
+  transition: all 1s;
+  overflow: hidden;
+  align-items: center;
+  gap: 10px;
+}
+
+.hover-div:hover{
+  width: 60%;
+  /* line-height: 300px; */
+  transform: scale(1.2);
+}
+
+img{
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+}
+
+.second-tb{
+  width: 60%;
+  margin: 10px;
+}
+
+.font-tb{
+border: 1px solide coral;
+font-weight: bold;
+}
+

@@ -1,0 +1,59 @@
+.container{
+  background-color: #0c51a6;
+  color: white;
+  width: 1200px;
+  margin: 0px auto;
+  
+}
+
+.title{
+  display: flex;
+}
+
+.title > h2{
+  padding: 20px 20px;
+  align-self: right ;
+}
+
+.title >span{
+  margin: 20px 0px;
+  background-color: #0a4288;
+  padding: 10px;
+  font-size: 0.8rem;
+  
+}
+
+.intro{
+  width: 100%
+}
+
+.detail{
+  display: flex;
+}
+.d1{
+background-color:#e5f1ff ;
+color: black;
+}
+
+.d1 > div > span{
+  font-size: 0.8rem;
+}
+
+.reser{
+  display: flex;
+}
+
+.ending{
+  display: flex;
+  background-color: lightgray;
+  color: grey;
+}
+
+.ending > h2{
+  padding: 10px 10px;
+}
+
+.ending > div > p{
+  font-size: 0.7rem;
+  text-align: center;
+}

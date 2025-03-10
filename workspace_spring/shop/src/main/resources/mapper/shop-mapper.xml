@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 해당 파일에 모든 쿼리문을 작성 -->
+<!-- namespace에는 xml파일과 연결할 Mapper interface 파일명을 패키지를 포함하여 적어주세요 -->
+<mapper namespace="com.green.shop.mapper.ShopMapper">
+
+    <!--상품 하나를 등록(INSERT)하는 쿼리-->
+    <!--제약 조건들이 있는 컬럼들을 넣어준다-->
+    <insert id="insertShop">
+        INSERT INTO SHOP_ITEM(
+            ITEM_NAME
+            , ITEM_PRICE
+            , ITEM_INTRO
+        ) VALUES(
+            #{itemName}
+            , #{itemPrice}
+            , #{itemIntro}
+        )
+    </insert>
+    <!--패키지명까지 모두 resultType에 넣어줘야한다-->
+    <!--만약 패키지명을 쓰지 않으려면 application.properties에 아래처럼 패키지명을 넣어준다-->
+    <!--mybatis.type-aliases-package=com.green.shop.dto-->
+
+    <!--모든 상품의 상품번호, 상품명, 상품가격, 상품 등록일을 조회한느 기능-->
+    <select id="selectShopList" resultType="ShopDTO">
+        SELECT ITEM_CODE
+        , ITEM_NAME
+        , ITEM_PRICE
+        , REG_DATE
+        FROM SHOP_ITEM
+    </select>
+
+    <!--상품 번호를 통해, 해당 상품의 모든 컬럼을 조회하는 기능-->
+    <select id="selectItem" resultType="ShopDTO">
+        SELECT *
+        FROM SHOP_ITEM
+        WHERE ITEM_CODE = #{itemCode}
+    </select>
+
+
+    <!-- 특정 상품 번호에 해당하는 상품을 삭제하는 쿼리 -->
+    <delete id="deleteItem">
+        DELETE FROM SHOP_ITEM
+        WHERE ITEM_CODE = #{itemCode}
+    </delete>
+
+
+    <!--특정 상품번호에 해당하는 상품의 상품명, 가격, 상품설명을 수정하는 쿼리-->
+    <update id="updateShop">
+        <!--쉼표 빼먹지 마시오!-->
+        <!--DTO클래스에 있는 이름과 동일하게 작성!-->
+        UPDATE SHOP_ITEM
+        SET
+        ITEM_NAME = #{itemName},
+        ITEM_PRICE = #{itemPrice},
+        ITEM_INTRO = #{itemIntro}
+        WHERE ITEM_CODE = #{itemCode}
+    </update>
+
+
+
+
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,46 @@
+.container{
+  /* border: 1px solid black; */
+  width: 70%;
+  margin: 50px auto;
+  text-align: center;
+}
+/* ----주문목록---- */
+.orderlist-table{
+  border: 1px solid #dddddd;
+  width: 100%;
+  /* 이중선 제거 */
+  border-collapse: collapse;
+  font-weight: bold;
+}
+.orderlist-table tr, .orderlist-table td{
+  border: 1px solid #dddddd;
+}
+.orderlist-table > thead > tr{
+  background-color: rgb(2, 36, 104);
+  color: white;
+}
+.orderlist-table > tbody > tr:nth-child(odd){
+  background-color: antiquewhite;
+}
+.orderlist-table td{
+  padding: 8px;
+}
+
+/* ----주문상세정보---- */
+.orderdetail-table{
+  border: 1px solid #dddddd;
+  width: 100%;
+  /* 이중선 제거 */
+  border-collapse: collapse;
+  margin-top: 30px;
+  font-weight: bold;
+}
+.orderdetail-table tr, .orderdetail-table td{
+  border: 1px solid #dddddd;
+}
+.orderdetail-table td{
+  padding: 8px;
+}
+.orderdetail-table td:nth-child(odd){
+  background-color: antiquewhite;
+}

@@ -1,0 +1,31 @@
+div > p{
+  color: red;
+  font-weight: bold;
+}
+/* div 태그 안의 자식 p태그 중 첫번째 선택 */
+div > p:first-child{
+  color: olive;
+}
+
+div > p:last-child{
+  color: blue;
+}
+
+/* div 태그 안의 자식 p태그 중 순번으로 선택 */
+div > p:nth-child(2){
+  color: aqua;
+}
+
+div > p:nth-child(3){
+  color: burlywood
+}
+
+/* ul태그 안의 자식 li 중 짝수번수만 선택 */
+/* even : 짝수, odd : 홀수 */
+ul > li:nth-child(even){
+  color: burlywood
+}
+
+ul > li:nth-child(odd){
+  color: purple
+}

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  font-family: "Montserrat", sans-serif; 
+}
+
+body{
+  background-color: lightslategray;
+  width: 100%;
+}
+
+.container{
+  background-color: white;
+  width: 80%;
+  margin: 20px auto;
+  padding: 16px;
+}
+
+.intro{
+  text-align: center;
+}
+
+.intro > span{
+  background-color: lightpink;
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  padding: 6px 20px;
+  /* margin-bottom: 5%; 인라인태그는 상하마진 안먹힘 */
+}
+
+.intro > h3{
+  margin: 20px 0px;
+  font-size: 2rem;
+}
+
+.intro > h3 > span{
+  color: rgb(56, 206, 206);
+}
+
+.list{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.member{
+  border: 1px solid blue;
+}
+
+.member > img{
+  width: 100%;
+}
+
+.detail{
+  text-align: center;
+}

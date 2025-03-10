@@ -1,0 +1,35 @@
+.container{
+  width: 500p;
+  border: 1px solid black;
+  height: 400px;
+
+  display: flex;
+  /* 주축 방향을 지정하고 속성 */
+  /* row : 주축이 가로로 설정(item들이 가로로 배치) */
+  /* column : 주축이 세로로 설정(item들이 세로로 배치) */
+  /* 주축을 설정하지 않으면 가로방향 row가 기본 설정 */
+  flex-direction: row;
+  /* 주축방향의 정렬방식 */
+  justify-content: space-evenly;
+  /* 교차축 방향의 정렬방식으로 아이템 전체적용 */
+  align-items: center;
+
+}
+
+/* 아이템 */
+.item{
+  border: 1px solid red;
+  /* %로 너비를 줄 수 있다. */
+  width: 30%;
+  /* 각각의 아이템의 너비를 정확히 균등한 비율로 나눠준다. */
+  flex-grow: 1;
+  /* 맘편하게 width써도 된다. */
+}
+/* 클래스에 두개줘도 된다.*/
+.d1{
+  /* 각각의 아이템에 교차축 정렬방식 */
+   align-self: flex-end;
+ }
+
+ /* 플렉스는 div뿐만 아니라 어떠한 태그에 사용해도 모두 가능하다. */
+ 

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- css 적용시 순서대로 결과값이 나오므로 마지막 파일로 적용된다 -->
+  <link rel="stylesheet" href="20.선택자우선순위.css">
+  <link rel="stylesheet" href="20.선택자우선순위_1.css">
+</head>
+<body>
+  <h2>선택자 우선순위</h2>
+
+<div>
+  div 태그입니다
+</div>
+<p class="p1">
+  p 태그입니다
+</p>
+
+<span class="s1">
+  span 태그입니다
+</span>
+
+<!-- 간단한 디자인은 테스트겸 html에서 속성으로 변경 가능하다 굳이 css만들지 않아도 됨 -->
+<h3 style="font-style: italic; font-size: 12px;">
+  h3 태그입니다
+</h3>
+
+<!-- 참고 -->
+<h2 id="id1">아이디 우선</h2>
+<h2 class="cl1">아이디 우선</h2>
+
+<h5>h5태그입니다</h5>
+
+</body>
+</html>

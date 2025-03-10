@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="인라인_블록.css">
+</head>
+<body>
+  <!-- 모든 태그는 세 가지의 유형을 가진다.
+   즉, 세 가지 중에 한가지이다.
+   1. 블럭 요소 : h1~h6, div, table, ul...
+   2. 인라인 요소 : span
+   3. 인라인-블럭 요소 : input, img..
+   -->
+
+  <!-- block 요소 태그 -->
+   <!-- 
+    width는 화면 전체를 채움
+    값을 주어 크기를 변경할 수 있지만, 
+    같은 줄에 다른 태그가 들어올 수는 없다.
+    상하좌우 마진 변경 가능
+   -->
+  react
+   <h3>안녕하세요</h3>
+   react
+
+   <br>
+
+  <!-- inline 요소 태그 -->
+  <!-- 
+  인라인은 기본적으로 width 값을 가질 수 없다.
+  content의 크기만큼만 자동으로 width가 설정됨
+  좌우만 가능하고 상하마진은 변경 못함
+  -->
+  <span>hello</span>
+  react
+  <!-- 인라인 요소 옆으로 글자가 붙어서 나온다. -->
+<br>
+<br>
+
+  <!-- inline-block 요소 태그 -->
+  <!-- 
+  너비값 조정 가능(블럭요소)
+  같은 줄에 다른 태그가 올 수 있음(인라인요소)
+  상하 마진 값 가질 수 있음(블럭요소)
+   -->
+  <input type="text">
+  잘자요 <br><br>
+
+  <div>첫번째 div</div>
+  <div>두번째 div</div>
+
+  <div class="d1">가로 가운데 block</div>
+
+  <!-- 부모태그에 text-align 으로 가운데 정렬을 준다. -->
+  <div class="d2">
+    <span>가로 가운데 inline</span>
+    <!-- 인라인 블럭도 마찬가지 부모태그에 가운데 정렬을 준다. -->
+    <input type="text">
+  </div>
+
+
+
+</body>
+</html>

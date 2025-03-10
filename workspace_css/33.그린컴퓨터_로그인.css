@@ -1,0 +1,52 @@
+.container{
+  padding: 20px;
+  width: 70%;
+  margin: 30px auto;
+  border: 1px solid black;
+  font-size: 0.8rem;
+}
+
+.left{
+  border: none;
+  border-radius: 8px;
+  display: inline-block;
+  width: 50%;
+  margin-right: -6px;
+  padding: 7px;
+  background-color: rgb(226, 221, 221);
+}
+.right{
+  border: 1px solid blue;
+  /* 인라인블록으로 만들어 주어야 너비를 조정할 수 있다 */
+  display: inline-block;
+  width: 50%;
+  padding: 10px;
+}
+
+.btn-login{
+  background-color: pink;
+  border: none;
+  width: 50%;
+  border-radius: 5px;
+  margin-top: 8px;
+}
+
+.left-div{
+  width: 100%;
+  border-radius: 4px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+p{
+  margin-bottom: 5px;
+}
+
+.right-p{
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+.right-ps{
+  font-weight: bold;
+  font-size: 0.6rem;
+}

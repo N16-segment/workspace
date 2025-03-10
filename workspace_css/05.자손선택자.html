@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 자손 선택자 */
+    /* div 태그의 자손 b 태그 */
+    /* 공백(스페이스) 하나가 -> 자손을 의미한다 */
+    div b{
+      color: blueviolet;
+    }
+    div i{
+      color: red;
+    }
+    div>h2{
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h2>자손 선택자</h2>
+  </div>
+  <div>
+    <b>안녕하세요</b>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, <b>accusamus</b> pariatur velit nemo dolorem itaque officiis dignissimos quis perspiciatis. Nam <i>architecto</i> optio deserunt magnam autem vero eligendi nostrum incidunt doloribus.
+    </p>
+  </div>
+</body>
+</html>

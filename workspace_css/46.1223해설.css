@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  font-family: "Montserrat", sans-serif; 
+}
+
+body{
+  background-color: lightslategray;
+  width: 100%;
+}
+
+.container{
+  background-color: white;
+  width: 80%;
+  margin: 20px auto;
+  padding: 16px;
+}
+
+.intro{
+  text-align: center;
+}
+
+.intro > span{
+  background-color: lightpink;
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  padding: 6px 20px;
+  /* margin-bottom: 5%; 인라인태그는 상하마진 안먹힘 */
+}
+
+.intro > h3{
+  margin: 20px 0px;
+  font-size: 2rem;
+}
+
+.intro > h3 > span{
+  color: rgb(56, 206, 206);
+}
+
+.list{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.member{
+  border: 1px solid blue;
+  position: relative;
+}
+
+.member > img{
+  width: 100%;
+  height: 100%;
+  /* 영역안에 이미지의 크기를 비율에 맞춰서 넣는 방법 */
+  /* 글자로 인식하는 영역에서 폰트 사이즈를 0px로 주는 방법도 있지만 여백을 없애는 방법으로 아래를 사용 */
+  object-fit: cover;
+  object-position: center center;
+}
+
+.detail{
+  border: 1px solid red;
+  color: white;
+  background-color: rgb(0, 0, 0, 0.3);
+  font-size: 0.8rem;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  /* visibility: hidden; */
+  /* visibility와 display 는 transition이 안먹힌다. */
+  transition: all 1s;
+  opacity: 0;
+}
+
+.sns{
+  font-size: 1.2rem;
+}
+
+.sns:hover{
+  cursor: pointer;
+  color: skyblue;
+}
+
+/* 멤버에 마우스를 데면 디테일이 다시 보이는 것이므로 가려준 디테일을 선택해야함 */
+.member:hover .detail{
+  /* visibility: visible; */
+  opacity: 1;
+}
+

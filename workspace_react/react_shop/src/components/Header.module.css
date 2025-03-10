@@ -1,0 +1,24 @@
+.header{
+  background-color: rgb(200, 233, 235);
+  /* 15hv 전체 높이 기준으로 15%주겠다는 뜻 */
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+.menu{
+  display: flex;
+  color: aliceblue;
+  font-size: 1.6rem;
+  gap: 2.5rem;
+}
+.menu a{
+  text-decoration: none;
+  color: rgb(57, 78, 97);
+}
+
+/* active 클래스가 적용된 a 태그 */
+a.active{
+  color: orange;
+}

@@ -1,0 +1,39 @@
+
+
+function App() {
+  //데이터를 받을때 변하는 값은 useState 변수사용
+  const [data, setData] = useState("");
+
+  //컴포넌트가 마운트 될때만 실행할 수 있는 useEfect 사용
+  useEffect((e) => {
+    //get()함수 안에는 데이터를 요청할 경로작성(url) 인터넷주소
+    //    'http://localhost:8080:/t1'
+    axios
+      .get("/api/t1")
+      //데이터 통신 성공 후 실행 내용 작성-> 화살표 함수
+      //매개변수는 즉 res : 통신에 대한 모든 정보가 담긴 객체
+      //res : response(응답)
+      .then((res) => {
+        console.log("통신성공");
+        //{}로 되어있으니 객체라는 걸 알 수 있다.
+        console.log(res.data);
+        setData(res.data);
+      })
+      //데이터 통신 실패 시 실행 내용 작성-> 화살표 함수
+      // -> 오류가 나는 경우 catch가 실행됨 ex)정전, 인터넷 연결이 끊기는 경우 등
+      //error는 오류가 발생한 모든 정보를 갖는 객체
+      .catch((error) => {
+        console.log("통신 실패");
+        console.log(error);
+      });
+  }, []);
+
+  return (
+    <>
+      <div>React!</div>
+      <div>{data}</div>
+    </>
+  );
+}
+
+export default App;

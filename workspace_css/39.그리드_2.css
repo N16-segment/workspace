@@ -1,0 +1,21 @@
+.container{
+  width: 600px;
+  height: 400px;
+  margin: 20px auto;
+  border: 2px solid black;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(2, 100px);
+}
+
+.container > div{
+  border: 1px solid red;
+}
+
+.container > div:first-child{
+  /* 선을 기준으로 순차적 넘버링 됨 */
+  /* grid-column-start: 1;
+  grid-column-end: 3; */
+  /* 위의 두 속성 대신 아래 한줄로 병합처리 가능 */
+  grid-column: 1 / 3;
+}

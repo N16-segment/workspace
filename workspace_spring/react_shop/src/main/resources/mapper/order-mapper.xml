@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 해당 파일에 모든 쿼리문을 작성 -->
+<!-- namespace에는 xml파일과 연결할 Mapper interface 파일명을 패키지를 포함하여 적어주세요 -->
+<mapper namespace="com.green.react_shop.mapper.OrderMapper">
+
+    <!--주문 목록 조회 쿼리-->
+    <!--눈에 안보이더라도 항상 pk는 조회해야한다.-->
+<!--    <select id="selectOrderList" resultType="OrderDTO">-->
+<!--        SELECT ORDER_NUM-->
+<!--            , BUY_ITEM_NAME-->
+<!--            , BUY_ITEM_PRICE-->
+<!--            , BUY_CNT-->
+<!--            , BUY_PRICE-->
+<!--            , BUYER-->
+<!--            , BUY_DATE-->
+<!--        FROM ORDER_INFO-->
+<!--        ORDER BY REG_DATE DESC-->
+<!--    </select>-->
+
+    <!--주문 등록 쿼리-->
+    <insert id="insertOrderItem">
+        INSERT INTO ORDER_INFO(
+           ITEM_NUM
+            , BUYER
+            , BUY_CNT
+            , BUY_PRICE
+        ) VALUES(
+            #{itemNum}
+            , #{buyer}
+            , #{buyCnt}
+            , #{itemPrice} * #{buyCnt}
+        )
+    </insert>
+
+    <!-- 주문 상세 정보 조회 쿼리 -->
+    <select id="selectOrderItem" resultType="OrderDTO">
+        SELECT * FROM ORDER_INFO
+        WHERE ORDER_NUM = #{orderNum}
+    </select>
+
+    <!-- 주문 정보 수정 쿼리 -->
+    <update id="updateOrderItem">
+        UPDATE ORDER_INFO
+        SET
+            BUY_ITEM_NAME = #{buyItemName},
+            BUY_ITEM_PRICE = #{buyItemPrice},
+            BUYER = #{buyer}
+            BUY_CNT = #{buyCnt}
+        WHERE ORDER_NUM = #{orderNum}
+    </update>
+
+    <!--
+    <resultMap> 태그는 조회 결과 데이터를 자바로 가져오기 위해
+                가져올 자료형을 직접 커스터마이징하는 기능
+                조인할때만 사용하는 게 아님
+                result 태그의 column에는 데이터베이스에서 '조회되는 컬럼명'을 작성
+                result 태그의 property에는 조회되는 컬럼의 값을 자바로 가져올 변수명 작성
+                resultMap 태그의 type에는 변수들이 선언된 dto 틀래스를 작성(패키지명 포함)
+                primary key가 있는 컬럼에만 result 대신 id를 넣어준다.
+    -->
+    <!--주문 목록 조회-->
+    <resultMap id="order" type="OrderDTO">
+        <id     column="ORDER_NUM"   property="orderNum"/>
+        <result column="ITEM_NUM"    property="itemNum"/>
+        <result column="BUYER"       property="buyer"/>
+        <result column="BUY_CNT"     property="buyCnt"/>
+        <result column="BUY_PRICE"   property="buyPrice"/>
+        <result column="BUY_DATE"    property="buyDate"/>
+
+        <!--1:1관계라고 생각한다. property="변수명", javaType="자료형"-->
+        <association property="itemDTO" javaType="ItemDTO">
+            <id     column="ITEM_NUM" property="itemNum"/>
+            <result column="ITEM_NAME" property="itemName"/>
+            <result column="ITEM_PRICE" property="itemPrice"/>
+            <result column="SELLER" property="seller"/>
+            <result column="ITEM_INTRO" property="itemIntro"/>
+            <result column="REG_DATE" property="regDate"/>
+        </association>
+    </resultMap>
+    <!--주문 목록 조회 쿼리-->
+    <select id="getOrderList" resultMap="order">
+        SELECT ORDER_NUM,
+            BUY_CNT,
+            BUY_PRICE,
+            BUYER,
+            BUY_DATE,
+            order_info.ITEM_NUM,
+            ITEM_PRICE
+        FROM order_info INNER JOIN item_info
+        ON ORDER_INFO.ITEM_NUM = ITEM_INFO.ITEM_NUM
+    </select>0
+
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

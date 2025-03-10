@@ -1,0 +1,23 @@
+/* 
+가상클래스 : css에서 태그의 상태나 조건에 따라 디자인을 적용할 때 사용
+->자바스크립트의 이벤트랑 비슷하다고 생각하면 된다.
+*/
+.d1{
+background-color: chartreuse;  
+}
+/* 클래스가 d1인 태그에 마우스 올릴때만 적용 */
+.d1:hover{
+  background-color: red;
+}
+/* 자식고르기도 가상클래스 */
+ul > li:first-child{
+  color: red;
+}
+ul > li:nth-child(1){
+  color: blue;
+}
+ul > li:nth-child(3){
+  color: blueviolet;
+  font-size: 1.2rem;
+  font-weight: bold;
+}

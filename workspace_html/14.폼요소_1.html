@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<!-- 사용자의 정보를 입력을 받는 태그들을 form 요소라고 한다. 대표적인 것이 input 태그 -->
+<h2>폼 요소 -1</h2>
+<input type="text" maxlength="5"> <br>
+<input type="text" placeholder="이름을 입력해주세요"> <br>
+<input type="color"> <br>
+<input type="button" value="버튼"> <br>
+<button type="buton">버튼</button> <br>
+<input type="text" value="이름 입력"> <br>
+<input type="password"> <br>
+<input type="number" max="5" min="2" value="3"> <br>
+<input type="date"> <br>
+<input type="button" value="버튼!" onclick="alert(5)"> <br>
+<input type="file"> <br>
+
+<!-- 다중선택이 가능한 것이 checkbox / 처음 화면뜰때 미리 체크가 되어있는 것 checked-->
+<!-- checked 는 속성명과 속성값이 동일해서 그냥 속성명만 작성하면 된다. -->
+<input type="checkbox" checked>독서
+<input type="checkbox" checked>운동
+<input type="checkbox" checked>요가 <br>
+
+<!-- radio에서 하나의 묶음을 인식시키기 위해 같은 name속성을 부여함 name 위치는 상관없다. -->
+<!-- radio는 동그라미로 체크하는 곳이 표현되며 여러개 중에 하나만 선택, 체크할 수 있다. -->
+<input type="radio" name="gender" >남성
+<input type="radio" name="gender" >여성 <br>
+<!-- 둘 중 하나 미리 체크되어 있음 checked -->
+<input type="radio" name="answer" >예
+<input type="radio" name="answer" checked>아니오 <br>
+
+<!-- 오른쪽에 화살표가 나오는 선택박스 -->
+<select>
+  <option>010</option>
+  <option>011</option>
+  <option>012</option>
+</select>
+<!-- 미리 대표하는 것을 미리 정해놓는 것 selected -->
+<select>
+  <option>010</option>
+  <option selected>011</option>
+  <option>012</option>
+</select> <br>
+
+<!-- input 보다 좀 더 많은 내용을 넣을 수 있는 textarea 태그 -->
+<textarea rows="5" cols="40"></textarea> <br>
+
+<button type="button">버튼!</button>
+</body>
+</html>

@@ -1,0 +1,42 @@
+.container{
+  width: 600px;
+  height: 400px;
+  margin: 20px auto;
+  border: 2px solid black;
+
+  /* 열과 행을 만드는 방법 */
+  display: grid;
+  /* grid-template-columns: 50px 100px 50px 200px;
+  grid-template-rows:100px 200px 100px; */
+
+  /* grid-template-columns: 20% 30% 40%;
+  grid-template-rows:10% 20% 30%; */
+
+  /* grid-template-columns: 1fr 2fr 1.5fr;
+  grid-template-rows: 2fr 0.5fr 1.5fr; */
+
+  /* grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 25%); */
+
+  /* grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto); */
+
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+
+  /* gap: 10px; */
+  /* gap: 10px 30px; */
+  /* 세로정렬 */
+  align-content: space-evenly;
+  /* 가로정렬 */
+  justify-content: space-around;
+  
+
+}
+
+.container > div{
+  border: 1px solid red;
+}
+
+
+

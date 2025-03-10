@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  font-family: "Montserrat", sans-serif;
+}
+
+.total{
+  background-color: white;
+  border-radius: 10px;
+
+}
+
+.container{
+  background-color: #caf4ff;
+  display: flex;
+  color: white;
+  /* vh(뷰포트 하이트) 높이가 화면을 따라서 주어진 값에 따라  내용물이 보임 */
+  height: 100vh;
+  /* 100vw : 눈에 보이는 전체영역 화면으로 간주하기때문에 스크롤도 포함한다.
+  100%는 스크롤 너비는 제외 */
+  width: 100%;
+  
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* justify-content: space-around;*/
+}
+
+.main{
+  width: 350px;
+  /* border: 1px solid black; */
+  flex-direction: column;
+  color: black;
+  display: flex;
+  align-items: flex-start;
+}
+
+.img-house{
+  justify-content: flex-start;
+  border-radius: 10px;
+  width: 350px;
+  height: 200px;
+  transition: all 0.6s;
+
+}
+
+.heart-span{
+  /* position을 fixed로 변경하면 top, left, right, bottom 속성도 변경해야 함 */
+  /* 네개의 속성의 의미 : 떨어진 거리정도 */
+  /* 화면에서 고정 */
+  position: fixed;
+  /* 오른쪽에서부터 떨어져 있는 정도 */
+  right: 50px;
+  /* 위에서부터 떨어진 거리 */
+  top: 50px;
+  /* left: 50px ; */
+
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  color: red;
+  text-align: center;
+}
+
+.p1{
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 5px 8px;
+}
+
+.p2{
+  font-weight: bold;
+  font-size: 2rem;
+  color: red;
+  padding: 2px 8px;
+}
+
+.p3{
+  padding: 5px 10px;
+  
+}
+.total-2{
+}
+.person{
+}
+.main-2{
+  align-items: center;
+  color: black;
+  margin: 10px;
+}
+
+.img-face{
+  /* border: 1px solid blue; */
+  border-radius: 50%;
+  width: 15%;
+  margin: 10px;
+}
+.num{
+  font-weight: bold;
+}
+

@@ -1,0 +1,24 @@
+/* 같은 속성일때의 우선순위
+
+중복이 되지 않는 다른 속성은 모두 적용됨
+1순위 - !important 속성이 붙은(강제1등만듦)
+2순위 - 인라인 스타일
+3순위 - id 선택자
+4순위 - 클래스 선택자
+5순위 - 태그 선택자
+*/
+#aaa{
+  background-color: blue;
+  color: aliceblue;
+}
+
+.d1{
+  background-color:  lightblue !important;
+  font-size: 2rem;
+}
+
+div{
+  background-color: blueviolet;
+}
+
+/* 디자이너들이 사용할뿐 개발자는 거의 사용하지 않는다. 그냥 상식적으로 알고 있는 정도 */

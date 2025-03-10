@@ -1,0 +1,49 @@
+/* 블럭요소 태그 */
+h3{
+  border: 1px solid black;
+  width: 500px;
+  margin: 30px;
+  /* 블럭요소의 상하좌우 마진은 잘 들어간다 */
+}
+
+/* 인라인요소 태그 */
+/* 너비를 줘도 적용되지 않는다. */
+span{
+  border: 1px solid black;
+  width: 500px;
+  margin: 30px;
+  /* 좌우만 가능하고 상하마진 변경 못함 */
+}
+
+/* 인라인-블럭 요소 태그 */
+input{
+  width: 500px;
+  margin-top: 100px;
+  /* 상하 마진 가능하다. */
+}
+
+div{
+  border: 1px solid black;
+  /* 블럭요소를 인라인요소로 변경 가능 */
+  display: inline;
+  /* 인라인으로 변경했으므로 너비조절 불가 */
+  width: 300px;
+  /* 두개가 옆으로 배치가 되면서 너비값도 가질 수 있다. */
+  /* 명령어가 중복되면 순서대로 적용되므로 가장 마지막에 주는 명령어를 따른다. */
+  display: inline-block;
+  width: 300px;
+}
+
+/* 가로 가운데 주려면 바깥쪽 여백인 마진을 상하는 0으로 두고 좌우를 auto로 준다. */
+.d1{
+  /* 블럭은 한줄 다 차지하므로 가운데인걸 보기힘드므로 너비를 주면 가운데 정렬이 눈에 보인다. */
+  border: 1px solid black;
+  width: 300px;
+  margin: 0 auto;
+}
+
+/* 인라인과 인라인블럭을 가운데로 정렬
+부모태그에 적용한다. */
+.d2{
+  text-align: center;
+}

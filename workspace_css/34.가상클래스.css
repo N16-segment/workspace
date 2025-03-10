@@ -1,0 +1,95 @@
+/* 가상클래스 : 가상의 선택자
+p:first-child{}
+p:nth-child{}
+콜론 다음에 들어오는 친구들을 가상 선택자라고 함
+*/
+
+/* 
+  쉬운 결론
+    -콜론 하나는 css2 문법(이전버전이 호환성이 좋음)
+   -콜론 두 개는 css3 문법
+   -호환성을 위해서 클론 하나만 쓰면 된다.
+   ->vscode에서 자동완성 되는대로 써라.
+
+   부연설명
+   css3에서 가상요소(::)와 가상클래스(:)를 구분하기 위해 추가한 내용
+
+   -가상요소는 실재로 존재하지 않는 요소에 스타일을 적용할 때 사용
+   before, after
+   first-line : 요소의 첫번째 줄
+   first-letter : 요소의 첫번째 글자
+
+   -가상클래스는 요소의 상태나 조건에 따라 스타일을 적용할 때 사용
+   hover : 마우스 올릴 때
+   focus : 클릴할 때
+   nth-child(), first-child
+
+    ::after, ::before : 유지보수(수정) 용이
+
+
+
+*/
+
+div{
+  width: 150px;
+  height: 150px;
+  background-color: gold;
+  color: white;
+  border: 1px solid black;
+  font-size: 2rem;
+  margin: 30px;
+  text-align: center;
+  line-height: 150px;
+  
+  /* 1초 동안 모든 변환에 대한 것이 일어나는 것 */
+  transition: all 1s;
+}
+
+/* 마우스를 올릴 때  */
+.d1:hover{
+  width: 300px;
+  height: 300px;
+  line-height: 300px;
+}
+.d2:hover{
+  background-color: rgb(93, 42, 165);
+  color: rgb(40, 224, 107);
+}
+
+input{
+  width: 150px;
+  margin-left: 30px;
+  outline: none;
+  transition: all 1s;
+
+}
+/* 클릭!됐을때 */
+input:focus{
+  width: 300px;
+  border: 1.5px solid green;
+}
+
+/* ul > li:first-child::before{ 는 클래스 li-1과 같다*/
+
+/* 선택자 앞에 인라인 요소를 추가 */
+.li-1:before{
+  /* "추가할 요소" */
+  content: "new";
+  /* 추가한 내용에 디자인을 준다 */
+  background-color: blueviolet;
+  color: white;
+  border-radius: 6px;
+  padding: 3px 6px;
+  margin-right: 6px;
+}
+
+.li-1:after{
+  /* "추가할 요소" */
+  content: "css";
+  /* 추가한 내용에 디자인을 준다 */
+  background-color: blueviolet;
+  color: white;
+  border-radius: 6px;
+  padding: 3px 6px;
+  margin-left: 6px;
+}
