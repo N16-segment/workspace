@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8cb0dc8f-cbc2-4325-911f-4abd48ef74f8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Array/Array.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassStudy/ClassStudy.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollectionFramework/CollectionFramework.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/First/First.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GreenTest/GreenTest.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IF_CASE/IF_CASE.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inheritance/Inheritance.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterfaceStudy/InterfaceStudy.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaTest/JavaTest.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loop/Loop.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Method/Method.iml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2u9K1nzseZLOzbFgKBgAcEGkRKO" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/01-STUDY/devel/workspace/workspace_java/Test_Git"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8cb0dc8f-cbc2-4325-911f-4abd48ef74f8" name="Changes" comment="" />
+      <created>1741655137383</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1741655137383</updated>
+    </task>
+    <servers />
+  </component>
+</project>
