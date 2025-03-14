@@ -1,0 +1,5 @@
+export const color = {
+  INPUT_BACKGROUND : '#DADADA',
+  BTN_BACKGROUND : '#204969',
+  VIEW_BACKGROUND : '#FFF7F7'
+}
