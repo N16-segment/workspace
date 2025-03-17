@@ -1,0 +1,1 @@
+import { Pressable, SafeAreaView, StyleSheet, Text} from 'react-native'

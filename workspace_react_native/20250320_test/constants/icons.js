@@ -1,5 +1,5 @@
-import icon_delete from '@/assets/icons/edit.png'
-import icon_delete from '@/assets/icons/edit.png'
+import icon_edit from '@/assets/icons/edit.png'
+import icon_delete from '@/assets/icons/delete.png'
 
 
 export const icon = {

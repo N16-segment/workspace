@@ -1,21 +1,25 @@
 import { SafeAreaView, StatusBar, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import Test from '../components/Test'
 import color from '../constants/colors.js'
+import TodoList from '../components/TodoList.jsx'
+import NewTodo from '../components/NewTodo.jsx'
 
-const index = () => {
+const MainScreen = () => {
   return (
     <SafeAreaView style={styles.main}>
-     <StatusBar barStyle={'default'}
+     <StatusBar 
+     barStyle={'light-content'}
+     backgroundColor={'#555555'}
      />
-        <Text style={styles.title}>To Do List</Text>
+      <Text style={styles.title}>To Do List</Text>
       
-      <Test/>
+      {/* <TodoList/> */}
+      <NewTodo/>
     </SafeAreaView>
   )
 }
 
-export default index
+export default MainScreen
 
 const styles = StyleSheet.create({
   main : {
