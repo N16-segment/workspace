@@ -2,7 +2,7 @@ import { SafeAreaView, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { TextInput } from 'react-native-web'
 
-//SafeAreaView : ios의 노치영역을 제외한 부분에 생성 
+//SafeAreaView : ios의 노치영역을 제외한 부분에 생성(아이폰 땜시)
 const Style1 = () => {
   return (
     <SafeAreaView style={styles.conttainer}>

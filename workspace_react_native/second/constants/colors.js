@@ -1,0 +1,5 @@
+//상수는 대문자
+export const COLOR = {
+  BTN_BACKGROUND_COLOR : '#C9E9D2',
+  BTN_BACKGROUND_ACTIVE_COLOR : '#FFE3E3'
+}
