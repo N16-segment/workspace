@@ -1,9 +1,10 @@
-import { Image, SafeAreaView, StyleSheet, Text, TextInput, View } from 'react-native'
+import { Image, Pressable, SafeAreaView, StyleSheet, Text, TextInput, View } from 'react-native'
 import React, { useState } from 'react'
 import icon_edit from '@/assets/icons/edit.png'
 import icon_delete from '@/assets/icons/delete.png'
 import { icon } from '../constants/icons'
 import { data } from '../data/data'
+import Task from './Task'
 //@/로 주소를 넣으면 import할때 최상위에서 주소를 찾는 것이라서 폴더만 간편히 찾아서 넣는다.
 //변하지 않는 값이 상수만 모아두는 constants에 컬러처럼 이미지를 넣어두고 꺼내쓰면 간편하다. 
 const CartList = () => {
@@ -43,19 +44,14 @@ const CartList = () => {
       {
         cartList.map((e, i)=>{
           return(
-            
-              <View key={i} style={styles.container}>
-              <Text style={styles.title}>{e.item}</Text>
-              <Image source={icon.ICON_EDIT}
-              tintColor={'pink'}
-              style={styles.img}
+              <Task 
+                key={i} 
+                e={e} 
+                cartList={cartList} 
+                setCartList={setCartList}
               />
-              <Image source={icon.ICON_DELETE}
-              tintColor={'red'}
-              style={styles.img}
-              />
-            </View>
-            
+              //e는 props로 전달한 데이터이고, i는 반복구분일뿐 props랑 무관
+              //전체 데에터를 props해준다.
           )
         })
       }
@@ -99,26 +95,7 @@ const CartList = () => {
 export default CartList
 
 const styles = StyleSheet.create({
-  container : {
-    borderWidth : 1,
-    margin : 12,
-    backgroundColor : '#002233',
-    borderRadius : 6,
-    flexDirection : 'row',
-    alignItems : 'center',
-    justifyContent : 'center',
-    padding : 10,
-    gap : 8
-  },
-  title : {
-    flex : 1,
-    color : 'white',
-    fontSize : 16
-  },
-  img : {
-    width : 25,
-    height : 25
-  },
+ 
   backboard : {
     backgroundColor : '#C9E9D2',
     paddingHorizontal : 20,
