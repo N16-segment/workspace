@@ -1,29 +1,31 @@
-import { SafeAreaView, StatusBar, StyleSheet, Text, View } from 'react-native'
+import { Keyboard, SafeAreaView, StatusBar, StyleSheet, Text, TouchableWithoutFeedback, View } from 'react-native'
 import React from 'react'
-import Test from '../components/Test'
-import color from '../constants/colors.js'
+import TodoList from '../components/TodoList.jsx'
 
-const index = () => {
+const Index = () => {
   return (
-    <SafeAreaView style={styles.main}>
-     <StatusBar barStyle={'default'}
-     />
+    <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
+      <SafeAreaView style={styles.main}>
+        <StatusBar barStyle={'dark-content'}
+          backgroundColor={'#C9E9D2'} />
         <Text style={styles.title}>To Do List</Text>
-      
-      <Test/>
-    </SafeAreaView>
+        <TodoList />
+      </SafeAreaView>
+    </TouchableWithoutFeedback>
   )
 }
 
-export default index
+export default Index
 
 const styles = StyleSheet.create({
-  main : {
-    justifyContent : 'center',
-    margin : 20
+  main: {
+    justifyContent: 'center',
+    margin: 20,
+    flex: 1
   },
-  title : {
-    fontSize : 40,
-    fontWeight : 'bold',
+  title: {
+    fontSize: 36,
+    fontWeight: 'bold',
+    marginBottom: 10,
   }
 })

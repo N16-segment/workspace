@@ -7,13 +7,13 @@ const MyButton = ({size='normal', onPress, title='press me'}) => {
     //<Pressable style={[styles.btnContainer, styles[size]]}>
     //스타일을 여러개 줄 때는 배열로 주면 된다. ,로 연결
     <Pressable 
-    style={(e)=>{
-      console.log(e)
-      return [styles.btnContainer, styles[size], 
+      style={(e)=>{
+        console.log(e)
+        return [styles.btnContainer, styles[size], 
               e.pressed && styles.pressed]
     }}
     //프롭스로 함수를 보낸다.
-    onPress={()=>{onPress()}}
+      onPress={()=>{onPress()}}
     >
       <Text style={styles.btn}>{title}</Text>
     </Pressable>
